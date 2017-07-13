@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            App Grua
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item item-right>
+        <button ion-button round item-right icon-end outline large (click)="refresh()">
+      Refrescar
+      <ion-icon name="refresh-circle"></ion-icon>
+    </button>
+    </ion-item>
+    <ion-list>
+        <ion-item *ngFor="let alerta of alertas">
+            <h1>{{alerta.calle}} {{alerta.altura}}</h1>
+            <h2> {{alerta.patente}} : {{alerta.descripcion}}</h2>
+            <ion-item>
+                <button id="{{alerta.id}}" color="assertive" ion-button item-right icon-right round (click)="remolcar(alerta.id)">Remolcado<ion-icon ios="ios-car" md="md-car"></ion-icon></button>
+                <button id="{{alerta.id}}" color="danger" ion-button item-right icon-right round (click)="remolcar(alerta.id)">No Encontrado<ion-icon name="alert"></ion-icon></button>
+            </ion-item>
+        </ion-item>
+    </ion-list>
+
+
+</ion-content>
