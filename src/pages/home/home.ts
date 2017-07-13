@@ -14,9 +14,9 @@ export class HomePage {
 
   //urlVehiculos: any = 'http://192.168.0.58:8080/pillpa/device/getAllAlertasGrua';
   //urlDesactivar: any = 'http://192.168.0.58:8080/pillpa/device/desactivarAlertas?id=';
-
-  urlVehiculos: any = 'http://pillpa.cloud.runaid.com.ar/device/getAllAlertasGrua';
-  urlDesactivar: any = 'http://pillpa.cloud.runaid.com.ar/device/desactivarAlertas?id=';
+  
+  urlVehiculos: any = 'http://pillpa.cloud.runaid.com.ar:8888/pillpa/device/getAllAlertasGrua';
+  urlDesactivar: any = 'http://pillpa.cloud.runaid.com.ar:8888/pillpa/device/desactivarAlertas?id=';
 
 
   constructor(public navCtrl: NavController,
